@@ -2,13 +2,14 @@
 import { usePathname, useRouter } from "next/navigation";
 import { AnimatePageOut } from "../../utils/animations.js";
 import React from "react";
+import Link, {LinkProps} from "next/link.js";
 
-interface Props {
+interface TransitionLinkProps extends LinkProps {
     href: string;
     label: string;
 }
 
-const TransitionLink = ({ href, label, }) => {
+const TransitionLink = ({ href, label, ...props }: TransitionLinkProps) => {
     const router = useRouter();
     const pathname = usePathname();
 

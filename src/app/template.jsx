@@ -3,7 +3,7 @@
 import { AnimatePageIn } from "@/utils/animations";
 import { useEffect } from "react";
 
-// Page Transitions go here
+// Page Transitions
 
 // Here's an example
 export default function Template({ children }) {
