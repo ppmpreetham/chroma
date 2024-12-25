@@ -1,7 +1,6 @@
 import gsap from "gsap";
-import { useEffect } from "react";
 
-// Example animation
+const time_duration = 0.25;
 
 export const AnimatePageIn = () => {
     const bannerOne = document.getElementById("banner-1");
@@ -13,15 +12,13 @@ export const AnimatePageIn = () => {
         const tl = gsap.timeline();
         tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], { 
             yPercent: 0
-            // for out, set it to be 100
         })
         .to([bannerOne, bannerTwo, bannerThree, bannerFour], {
             yPercent: 100,
-            // for out, set it to be 0
             stagger: 0.2,
+            duration: time_duration,
         });
     }
-    return null;
 };
 
 export const AnimatePageOut = (href, router) => {
@@ -37,12 +34,11 @@ export const AnimatePageOut = (href, router) => {
         })
         .to([bannerOne, bannerTwo, bannerThree, bannerFour], {
             yPercent: 0,
-            // for out, set it to be 0
             stagger: 0.2,
+            duration: time_duration,
             onComplete: () => {
                 router.push(href);
             },
         });
     }
-    return null;
-}
+};
