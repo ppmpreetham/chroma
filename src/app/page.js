@@ -1,6 +1,5 @@
 'use client';
 import { useEffect } from "react";
-import styles from './page.module.css';
 
 export default function Page() {
   // Load Locomotive Scroll
@@ -13,7 +12,7 @@ export default function Page() {
     ) ();
   }, []);
   return (
-    <main className={styles.page}>
+    <main>
 
     </main>
   )
