@@ -8,7 +8,7 @@ interface Props {
     label: string;
 }
 
-const TransitionLink = ({ href, label }) => {
+const TransitionLink = ({ href, label, }) => {
     const router = useRouter();
     const pathname = usePathname();
 
@@ -20,7 +20,7 @@ const TransitionLink = ({ href, label }) => {
 
     return (
         <button
-            className="text-xl text-neutral-900 hover:text-neutral-700"
+            className="text-xl text-white hover:text-neutral-700"
             onClick={handleClick}
         >
             {label}
