@@ -1,6 +1,6 @@
 "use client"
 
-import { AnimatePageIn } from "@/utils/animations";
+import { AnimatePageIn } from "../utils/animations";
 import { useEffect } from "react";
 
 // Page Transitions
