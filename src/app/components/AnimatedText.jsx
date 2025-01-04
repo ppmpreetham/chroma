@@ -5,7 +5,7 @@ const AnimatedText = ({ text, className = '', customText = '', time = 1, preStyl
   const intervalRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
-  const finalClass = isHovered ? preStyle : className;
+  const finalClass = isHovered ? preStyle || className : className;
 
   // Emojis work too :))
   const letters = customText === '' ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' : customText;
