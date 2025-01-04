@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
 import TransitionLink from "./TransitionLink";
-// import ParallaxTemplate from "./ParallaxSVGMasking"
+import AnimatedText from "./AnimatedText";
+
 // Here is the Navbar
 const Navigation = () => {
     return(
@@ -19,7 +20,7 @@ const Navigation = () => {
                     </li>
                 </ul>
             </nav>
-            {/* <ParallaxTemplate /> */}
+            <AnimatedText text="HELLO HELLO HELLO HELLO HELLo" className="text-2xl" customText="🔥⭐✨💀✔️❤️" />
         </>
     )
 }
